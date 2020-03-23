@@ -18,5 +18,5 @@ int main(){
 /*nie ma w mainie wartosci n, 
 za dużo wartosci w tablicy c (jest ich 6, nie 5) + brak ; na końcu
 nie ma zdefiniowanego ptr (jest *ptr, ale nie normalne ptr)
-a = b - a i b są tablicami, prawidłowe wpisane a [jedna liczba od 1 do 5] = b [jedna liczba od 1 do 5]
+a = b - a i b są tablicami, prawidłowe wpisane np. 'a [jedna liczba od 1 do 5] = b [jedna liczba od 1 do 5]'
 błąd przy tab[100*n] - nieznana jest wartość n
