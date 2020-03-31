@@ -11,7 +11,7 @@
 int main()
 {
 	int i,j;
-	float tab[100],war=0,sr=0,br;
+	float tab[100],wariancja=0,srednia=0,wariancja1;
 	float r1,r2,wynik;
 	srand(time(NULL));
 	for (i=1; i<=100; i++)
@@ -27,16 +27,16 @@ int main()
 	}
 	for (i=1; i<=100; i++)
 	{
-		sr=sr+tab[i];	
+		srednia=srednia+tab[i];	
 	}
-	sr=sr/100;
+	srednia=srednia/100;
 	for (i=1; i<=100; i++)
 	{
-		br=((tab[i]-sr)*(tab[i]-sr)); 
-		war=war+br;
+		wariancja1=((tab[i]-srednia)*(tab[i]-srednia)); 
+		wariancja=wariancja+wariancja1;
 	}
-	war=war/100;
-	printf("\n\nSrednia = %f\nWariancja = %f\n",sr,war);
+	wariancja=wariancja/100;
+	printf("\n\nSrednia = %f\nWariancja = %f\n",srednia,wariancja);
 	return 0;
 }
  
