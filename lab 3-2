@@ -11,18 +11,26 @@ int main()
 {
 	int i,j;
 	float tab[100],war=0,sr=0,br;
+	float r1,r2,wynik;
 	srand(time(NULL));
-	for (i=0; i<100; i++)
+	for (i=1; i<=100; i++)
 	{
 		tab[i]=(1.0*rand()/RAND_MAX);
+	    r1=(1.0*rand()/RAND_MAX);
+	    r2=(1.0*rand()/RAND_MAX);
+	    wynik=(cos(2*3.14*r2)*sqrt(-2.0*log(r1)));	//transformacja Boxa-Mullera
+		if((wynik>=0)&&(wynik<=1))
+		{
+      		tab[i]=wynik;
+    	}
 		printf("Tab[%d]=%f\n",i,tab[i]);
 	}
-	for (i=0; i<100; i++)
+	for (i=1; i<=100; i++)
 	{
 		sr=sr+tab[i];	
 	}
 	sr=sr/100;
-	for (i=0; i<100; i++)
+	for (i=1; i<=100; i++)
 	{
 		br=((tab[i]-sr)*(tab[i]-sr)); 
 		war=war+br;
@@ -31,3 +39,4 @@ int main()
 	printf("\n\nŚrednia = %f\nWariancja = %f\n",sr,war);
 	return 0;
 }
+ 
