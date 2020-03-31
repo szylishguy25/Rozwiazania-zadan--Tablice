@@ -1,3 +1,8 @@
+/* Zadanie 2:* napisz program obliczający średnią arytmetyczną i wariancję z
+   wygenerowanych losowo liczb z zakresu 0-1 przechowywanych w 100 elementowej
+   tablicy typu float. Lczby mają być tak wygenerowane, aby podlegały rozkładowi
+   normalnemu. */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
