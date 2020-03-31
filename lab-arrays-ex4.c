@@ -1,3 +1,4 @@
+/* Zadanie 4:* napisz program drukujący histogram na postawie zawartości tablicy z zadania 2. W razie potrzeby zwiększ wymiar tablicy. */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -37,7 +38,7 @@ int main()
 			m=i+1;
 		}
 	}
-	printf("Najmniejsza liczba = %f\n",min);
+	printf("\nNajmniejsza liczba = %f\n",min);
 	printf("Największa liczba = %f\n",max);
 	printf("\n\nHistogram:\n\nLp	Wartosc tablicy Histogram\n");
 		for (i=0; i<100; i++)
